@@ -1,18 +1,18 @@
 <!DOCTYPE qgis PUBLIC 'http://mrcc.com/qgis.dtd' 'SYSTEM'>
-<qgis maxScale="0" autoRefreshMode="Disabled" labelsEnabled="0" simplifyAlgorithm="0" simplifyDrawingTol="1" minScale="100000000" simplifyDrawingHints="1" symbologyReferenceScale="-1" readOnly="0" hasScaleBasedVisibilityFlag="0" autoRefreshTime="0" simplifyMaxScale="1" version="3.44.15-Solothurn" styleCategories="AllStyleCategories" simplifyLocal="1">
+<qgis hasScaleBasedVisibilityFlag="0" simplifyLocal="1" minScale="100000000" simplifyDrawingTol="1" simplifyDrawingHints="1" symbologyReferenceScale="-1" simplifyMaxScale="1" labelsEnabled="0" simplifyAlgorithm="0" readOnly="0" styleCategories="AllStyleCategories" maxScale="0" autoRefreshMode="Disabled" autoRefreshTime="0" version="3.44.15-Solothurn">
   <flags>
     <Identifiable>1</Identifiable>
     <Removable>1</Removable>
     <Searchable>1</Searchable>
     <Private>0</Private>
   </flags>
-  <temporal enabled="0" durationUnit="min" startExpression="" accumulate="0" limitMode="0" endExpression="" mode="0" endField="" fixedDuration="0" durationField="fid" startField="">
+  <temporal enabled="0" mode="0" fixedDuration="0" accumulate="0" endField="" endExpression="" durationField="fid" limitMode="0" durationUnit="min" startExpression="" startField="">
     <fixedRange>
       <start></start>
       <end></end>
     </fixedRange>
   </temporal>
-  <elevation binding="Centroid" zoffset="0" extrusionEnabled="0" type="IndividualFeatures" symbology="Line" zscale="1" respectLayerSymbol="1" customToleranceEnabled="1" extrusion="0" clamping="Absolute" showMarkerSymbolInSurfacePlots="0">
+  <elevation type="IndividualFeatures" clamping="Absolute" symbology="Line" zoffset="0" zscale="1" binding="Centroid" extrusionEnabled="0" respectLayerSymbol="1" extrusion="0" customToleranceEnabled="1" showMarkerSymbolInSurfacePlots="0">
     <data-defined-properties>
       <Option type="Map">
         <Option type="QString" value="" name="name"/>
@@ -29,7 +29,7 @@
             <Option type="QString" value="collection" name="type"/>
           </Option>
         </data_defined_properties>
-        <layer enabled="1" locked="0" pass="0" id="{a5d05d04-90c4-445e-a153-0a9acc524828}" class="SimpleLine">
+        <layer enabled="1" id="{a5d05d04-90c4-445e-a153-0a9acc524828}" pass="0" class="SimpleLine" locked="0">
           <Option type="Map">
             <Option type="QString" value="0" name="align_dash_pattern"/>
             <Option type="QString" value="square" name="capstyle"/>
@@ -78,7 +78,7 @@
             <Option type="QString" value="collection" name="type"/>
           </Option>
         </data_defined_properties>
-        <layer enabled="1" locked="0" pass="0" id="{d1c4bb47-f315-470e-ba03-c8cb89045c57}" class="SimpleFill">
+        <layer enabled="1" id="{d1c4bb47-f315-470e-ba03-c8cb89045c57}" pass="0" class="SimpleFill" locked="0">
           <Option type="Map">
             <Option type="QString" value="3x:0,0,0,0,0,0" name="border_width_map_unit_scale"/>
             <Option type="QString" value="152,125,183,255,rgb:0.5960784,0.4901961,0.7176471,1" name="color"/>
@@ -111,7 +111,7 @@
             <Option type="QString" value="collection" name="type"/>
           </Option>
         </data_defined_properties>
-        <layer enabled="1" locked="0" pass="0" id="{204458c9-eeb9-4ad9-b173-69be5cc4af21}" class="SimpleMarker">
+        <layer enabled="1" id="{204458c9-eeb9-4ad9-b173-69be5cc4af21}" pass="0" class="SimpleMarker" locked="0">
           <Option type="Map">
             <Option type="QString" value="0" name="angle"/>
             <Option type="QString" value="square" name="cap_style"/>
@@ -144,16 +144,16 @@
       </symbol>
     </profileMarkerSymbol>
   </elevation>
-  <renderer-v2 type="categorizedSymbol" forceraster="0" attr="CLASSE" enableorderby="0" symbollevels="0" referencescale="-1">
+  <renderer-v2 type="categorizedSymbol" attr="CLASSE" referencescale="-1" forceraster="0" symbollevels="0" enableorderby="0">
     <categories>
-      <category symbol="0" type="string" value="AREA INSTITUCIONAL" uuid="{7be4fda1-a69f-4cd6-a545-0ba0e4e1d157}" label="AREA INSTITUCIONAL" render="true"/>
-      <category symbol="1" type="string" value="AREA LAZER" uuid="{026aea21-b0d8-4379-80e6-52d112376bb9}" label="AREA LAZER" render="true"/>
-      <category symbol="2" type="string" value="AREA VERDE" uuid="{a3d53647-7929-449b-b6af-e436a9729429}" label="AREA VERDE" render="true"/>
-      <category symbol="3" type="string" value="BLOCOS DE APARTAMENTOS" uuid="{58a04984-8c27-491c-8cf9-12405090719c}" label="BLOCOS DE APARTAMENTOS" render="true"/>
-      <category symbol="4" type="string" value="PASSEIO" uuid="{8cf7d597-b67d-4fac-ad41-12a6286240a2}" label="PASSEIO" render="true"/>
-      <category symbol="5" type="string" value="RUAS" uuid="{1d9593ff-2589-4e3b-ab49-f072af7c4a5e}" label="RUAS" render="true"/>
-      <category symbol="6" type="string" value="TALUDES" uuid="{4799e1ff-9498-4556-bce4-37fd55b214be}" label="TALUDES" render="true"/>
-      <category symbol="7" type="string" value="VAGAS DE ESTACIONAMENTO" uuid="{aff52f3f-62e4-4dfa-bb37-a92ab803e4f4}" label="VAGAS DE ESTACIONAMENTO" render="true"/>
+      <category type="string" label="AREA INSTITUCIONAL" symbol="0" uuid="{7be4fda1-a69f-4cd6-a545-0ba0e4e1d157}" value="AREA INSTITUCIONAL" render="true"/>
+      <category type="string" label="AREA LAZER" symbol="1" uuid="{026aea21-b0d8-4379-80e6-52d112376bb9}" value="AREA LAZER" render="true"/>
+      <category type="string" label="AREA VERDE" symbol="2" uuid="{a3d53647-7929-449b-b6af-e436a9729429}" value="AREA VERDE" render="true"/>
+      <category type="string" label="BLOCOS DE APARTAMENTOS" symbol="3" uuid="{58a04984-8c27-491c-8cf9-12405090719c}" value="BLOCOS DE APARTAMENTOS" render="true"/>
+      <category type="string" label="PASSEIO" symbol="4" uuid="{8cf7d597-b67d-4fac-ad41-12a6286240a2}" value="PASSEIO" render="true"/>
+      <category type="string" label="RUAS" symbol="5" uuid="{1d9593ff-2589-4e3b-ab49-f072af7c4a5e}" value="RUAS" render="true"/>
+      <category type="string" label="TALUDES" symbol="6" uuid="{4799e1ff-9498-4556-bce4-37fd55b214be}" value="TALUDES" render="true"/>
+      <category type="string" label="VAGAS DE ESTACIONAMENTO" symbol="7" uuid="{aff52f3f-62e4-4dfa-bb37-a92ab803e4f4}" value="VAGAS DE ESTACIONAMENTO" render="true"/>
     </categories>
     <symbols>
       <symbol type="fill" clip_to_extent="1" is_animated="0" frame_rate="10" force_rhr="0" name="0" alpha="1">
@@ -164,7 +164,7 @@
             <Option type="QString" value="collection" name="type"/>
           </Option>
         </data_defined_properties>
-        <layer enabled="1" locked="0" pass="0" id="{70655737-f9ca-40aa-a9a3-c5f715876708}" class="SimpleFill">
+        <layer enabled="1" id="{70655737-f9ca-40aa-a9a3-c5f715876708}" pass="0" class="SimpleFill" locked="0">
           <Option type="Map">
             <Option type="QString" value="3x:0,0,0,0,0,0" name="border_width_map_unit_scale"/>
             <Option type="QString" value="99,78,58,128,rgb:0.3882353,0.3058824,0.227451,0.5000076" name="color"/>
@@ -195,7 +195,7 @@
             <Option type="QString" value="collection" name="type"/>
           </Option>
         </data_defined_properties>
-        <layer enabled="1" locked="0" pass="0" id="{98d2a7ea-8e2c-4a69-89b3-d61c0509f785}" class="SimpleFill">
+        <layer enabled="1" id="{98d2a7ea-8e2c-4a69-89b3-d61c0509f785}" pass="0" class="SimpleFill" locked="0">
           <Option type="Map">
             <Option type="QString" value="3x:0,0,0,0,0,0" name="border_width_map_unit_scale"/>
             <Option type="QString" value="188,145,103,128,rgb:0.7372549,0.5686275,0.4039216,0.5000076" name="color"/>
@@ -226,7 +226,7 @@
             <Option type="QString" value="collection" name="type"/>
           </Option>
         </data_defined_properties>
-        <layer enabled="1" locked="0" pass="0" id="{3cad9c3b-3bce-40e0-a7a7-4e5756433cfd}" class="SimpleFill">
+        <layer enabled="1" id="{3cad9c3b-3bce-40e0-a7a7-4e5756433cfd}" pass="0" class="SimpleFill" locked="0">
           <Option type="Map">
             <Option type="QString" value="3x:0,0,0,0,0,0" name="border_width_map_unit_scale"/>
             <Option type="QString" value="10,65,28,128,rgb:0.0392157,0.254902,0.1098039,0.5019608" name="color"/>
@@ -257,7 +257,7 @@
             <Option type="QString" value="collection" name="type"/>
           </Option>
         </data_defined_properties>
-        <layer enabled="1" locked="0" pass="0" id="{8a854928-358a-4da1-815b-456e3ea8dd32}" class="SimpleFill">
+        <layer enabled="1" id="{8a854928-358a-4da1-815b-456e3ea8dd32}" pass="0" class="SimpleFill" locked="0">
           <Option type="Map">
             <Option type="QString" value="3x:0,0,0,0,0,0" name="border_width_map_unit_scale"/>
             <Option type="QString" value="188,171,167,128,rgb:0.7372549,0.6705882,0.654902,0.5000076" name="color"/>
@@ -288,7 +288,7 @@
             <Option type="QString" value="collection" name="type"/>
           </Option>
         </data_defined_properties>
-        <layer enabled="1" locked="0" pass="0" id="{b060b1b7-2978-4fe7-b652-693b910b1477}" class="SimpleFill">
+        <layer enabled="1" id="{b060b1b7-2978-4fe7-b652-693b910b1477}" pass="0" class="SimpleFill" locked="0">
           <Option type="Map">
             <Option type="QString" value="3x:0,0,0,0,0,0" name="border_width_map_unit_scale"/>
             <Option type="QString" value="67,127,86,128,rgb:0.2627451,0.4980392,0.3372549,0.5000076" name="color"/>
@@ -319,7 +319,7 @@
             <Option type="QString" value="collection" name="type"/>
           </Option>
         </data_defined_properties>
-        <layer enabled="1" locked="0" pass="0" id="{f9cdad38-8cc5-40bc-a7bf-95297e048bc5}" class="SimpleFill">
+        <layer enabled="1" id="{f9cdad38-8cc5-40bc-a7bf-95297e048bc5}" pass="0" class="SimpleFill" locked="0">
           <Option type="Map">
             <Option type="QString" value="3x:0,0,0,0,0,0" name="border_width_map_unit_scale"/>
             <Option type="QString" value="81,83,86,128,rgb:0.3176471,0.3254902,0.3372549,0.5000076" name="color"/>
@@ -350,7 +350,7 @@
             <Option type="QString" value="collection" name="type"/>
           </Option>
         </data_defined_properties>
-        <layer enabled="1" locked="0" pass="0" id="{192395c7-ae17-4f53-807c-1ccfb17301fc}" class="SimpleFill">
+        <layer enabled="1" id="{192395c7-ae17-4f53-807c-1ccfb17301fc}" pass="0" class="SimpleFill" locked="0">
           <Option type="Map">
             <Option type="QString" value="3x:0,0,0,0,0,0" name="border_width_map_unit_scale"/>
             <Option type="QString" value="39,255,110,128,hsv:0.38788888888888889,0.84615854123750667,1,0.50000762951094835" name="color"/>
@@ -381,7 +381,7 @@
             <Option type="QString" value="collection" name="type"/>
           </Option>
         </data_defined_properties>
-        <layer enabled="1" locked="0" pass="0" id="{e67c8f5a-ca1b-4332-96fb-256851b450a9}" class="SimpleFill">
+        <layer enabled="1" id="{e67c8f5a-ca1b-4332-96fb-256851b450a9}" pass="0" class="SimpleFill" locked="0">
           <Option type="Map">
             <Option type="QString" value="3x:0,0,0,0,0,0" name="border_width_map_unit_scale"/>
             <Option type="QString" value="188,168,103,128,rgb:0.7372549,0.6588235,0.4039216,0.5000076" name="color"/>
@@ -414,7 +414,7 @@
             <Option type="QString" value="collection" name="type"/>
           </Option>
         </data_defined_properties>
-        <layer enabled="1" locked="0" pass="0" id="{00bb1a79-9f5a-4b17-9099-b8a32dd6d1c5}" class="SimpleFill">
+        <layer enabled="1" id="{00bb1a79-9f5a-4b17-9099-b8a32dd6d1c5}" pass="0" class="SimpleFill" locked="0">
           <Option type="Map">
             <Option type="QString" value="3x:0,0,0,0,0,0" name="border_width_map_unit_scale"/>
             <Option type="QString" value="231,113,72,255,rgb:0.9058824,0.4431373,0.2823529,1" name="color"/>
@@ -459,7 +459,7 @@
             <Option type="QString" value="collection" name="type"/>
           </Option>
         </data_defined_properties>
-        <layer enabled="1" locked="0" pass="0" id="{334cf74e-1d8c-4194-8ffe-40aa52db86f9}" class="SimpleFill">
+        <layer enabled="1" id="{334cf74e-1d8c-4194-8ffe-40aa52db86f9}" pass="0" class="SimpleFill" locked="0">
           <Option type="Map">
             <Option type="QString" value="3x:0,0,0,0,0,0" name="border_width_map_unit_scale"/>
             <Option type="QString" value="0,0,255,255,rgb:0,0,1,1" name="color"/>
@@ -511,7 +511,7 @@
     </activeChecks>
     <checkConfiguration/>
   </geometryOptions>
-  <legend showLabelLegend="0" type="default-vector"/>
+  <legend type="default-vector" showLabelLegend="0"/>
   <referencedLayers/>
   <referencingLayers/>
   <fieldConfiguration>
@@ -545,40 +545,40 @@
     </field>
   </fieldConfiguration>
   <aliases>
-    <alias index="0" name="" field="fid"/>
-    <alias index="1" name="" field="CLASSE"/>
-    <alias index="2" name="" field="AREA_M2"/>
-    <alias index="3" name="" field="AREA_%"/>
+    <alias field="fid" index="0" name=""/>
+    <alias field="CLASSE" index="1" name=""/>
+    <alias field="AREA_M2" index="2" name=""/>
+    <alias field="AREA_%" index="3" name=""/>
   </aliases>
   <defaults>
-    <default expression="" field="fid" applyOnUpdate="0"/>
-    <default expression="" field="CLASSE" applyOnUpdate="0"/>
-    <default expression="" field="AREA_M2" applyOnUpdate="0"/>
-    <default expression="" field="AREA_%" applyOnUpdate="0"/>
+    <default applyOnUpdate="0" field="fid" expression=""/>
+    <default applyOnUpdate="0" field="CLASSE" expression=""/>
+    <default applyOnUpdate="0" field="AREA_M2" expression=""/>
+    <default applyOnUpdate="0" field="AREA_%" expression=""/>
   </defaults>
   <constraints>
-    <constraint exp_strength="0" notnull_strength="1" unique_strength="1" constraints="3" field="fid"/>
-    <constraint exp_strength="0" notnull_strength="0" unique_strength="0" constraints="0" field="CLASSE"/>
-    <constraint exp_strength="0" notnull_strength="0" unique_strength="0" constraints="0" field="AREA_M2"/>
-    <constraint exp_strength="0" notnull_strength="0" unique_strength="0" constraints="0" field="AREA_%"/>
+    <constraint unique_strength="1" constraints="3" field="fid" exp_strength="0" notnull_strength="1"/>
+    <constraint unique_strength="0" constraints="0" field="CLASSE" exp_strength="0" notnull_strength="0"/>
+    <constraint unique_strength="0" constraints="0" field="AREA_M2" exp_strength="0" notnull_strength="0"/>
+    <constraint unique_strength="0" constraints="0" field="AREA_%" exp_strength="0" notnull_strength="0"/>
   </constraints>
   <constraintExpressions>
-    <constraint desc="" field="fid" exp=""/>
-    <constraint desc="" field="CLASSE" exp=""/>
-    <constraint desc="" field="AREA_M2" exp=""/>
-    <constraint desc="" field="AREA_%" exp=""/>
+    <constraint exp="" desc="" field="fid"/>
+    <constraint exp="" desc="" field="CLASSE"/>
+    <constraint exp="" desc="" field="AREA_M2"/>
+    <constraint exp="" desc="" field="AREA_%"/>
   </constraintExpressions>
   <expressionfields/>
   <attributeactions>
-    <defaultAction key="Canvas" value="{00000000-0000-0000-0000-000000000000}"/>
+    <defaultAction value="{00000000-0000-0000-0000-000000000000}" key="Canvas"/>
   </attributeactions>
-  <attributetableconfig sortOrder="0" actionWidgetStyle="dropDown" sortExpression="&quot;CLASSE&quot;">
+  <attributetableconfig actionWidgetStyle="dropDown" sortExpression="&quot;CLASSE&quot;" sortOrder="0">
     <columns>
-      <column type="field" hidden="0" width="-1" name="fid"/>
-      <column type="field" hidden="0" width="-1" name="CLASSE"/>
-      <column type="field" hidden="0" width="-1" name="AREA_M2"/>
-      <column type="field" hidden="0" width="-1" name="AREA_%"/>
-      <column type="actions" hidden="1" width="-1"/>
+      <column type="field" width="-1" hidden="0" name="fid"/>
+      <column type="field" width="-1" hidden="0" name="CLASSE"/>
+      <column type="field" width="-1" hidden="0" name="AREA_M2"/>
+      <column type="field" width="-1" hidden="0" name="AREA_%"/>
+      <column type="actions" width="-1" hidden="1"/>
     </columns>
   </attributetableconfig>
   <conditionalstyles>
@@ -615,16 +615,16 @@ def my_form_open(diálogo, camada, feição):
     <field editable="1" name="fid"/>
   </editable>
   <labelOnTop>
-    <field name="AREA_%" labelOnTop="0"/>
-    <field name="AREA_M2" labelOnTop="0"/>
-    <field name="CLASSE" labelOnTop="0"/>
-    <field name="fid" labelOnTop="0"/>
+    <field labelOnTop="0" name="AREA_%"/>
+    <field labelOnTop="0" name="AREA_M2"/>
+    <field labelOnTop="0" name="CLASSE"/>
+    <field labelOnTop="0" name="fid"/>
   </labelOnTop>
   <reuseLastValue>
-    <field name="AREA_%" reuseLastValue="0"/>
-    <field name="AREA_M2" reuseLastValue="0"/>
-    <field name="CLASSE" reuseLastValue="0"/>
-    <field name="fid" reuseLastValue="0"/>
+    <field reuseLastValue="0" name="AREA_%"/>
+    <field reuseLastValue="0" name="AREA_M2"/>
+    <field reuseLastValue="0" name="CLASSE"/>
+    <field reuseLastValue="0" name="fid"/>
   </reuseLastValue>
   <dataDefinedFieldProperties/>
   <widgets/>
