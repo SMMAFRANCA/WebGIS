@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<StyledLayerDescriptor xmlns="http://www.opengis.net/sld" xmlns:ogc="http://www.opengis.net/ogc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.1.0" xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.1.0/StyledLayerDescriptor.xsd" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:se="http://www.opengis.net/se">
+<StyledLayerDescriptor xmlns="http://www.opengis.net/sld" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.1.0" xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.1.0/StyledLayerDescriptor.xsd" xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se">
   <NamedLayer>
     <se:Name>PROJETOS_PUBLICOS</se:Name>
     <UserStyle>
       <se:Name>PROJETOS_PUBLICOS</se:Name>
       <se:FeatureTypeStyle>
         <se:Rule>
-          <se:Name>LICITAÇÃO</se:Name>
+          <se:Name>NA FILA</se:Name>
           <se:Description>
-            <se:Title>LICITAÇÃO</se:Title>
+            <se:Title>NA FILA</se:Title>
           </se:Description>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>ETAPA</ogc:PropertyName>
-              <ogc:Literal>LICITAÇÃO</ogc:Literal>
+              <ogc:PropertyName>STATUS</ogc:PropertyName>
+              <ogc:Literal>NA FILA</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           <se:PointSymbolizer>
@@ -21,34 +21,7 @@
               <se:Mark>
                 <se:WellKnownName>circle</se:WellKnownName>
                 <se:Fill>
-                  <se:SvgParameter name="fill">#4deff1</se:SvgParameter>
-                </se:Fill>
-                <se:Stroke>
-                  <se:SvgParameter name="stroke">#232323</se:SvgParameter>
-                  <se:SvgParameter name="stroke-width">0.5</se:SvgParameter>
-                </se:Stroke>
-              </se:Mark>
-              <se:Size>14</se:Size>
-            </se:Graphic>
-          </se:PointSymbolizer>
-        </se:Rule>
-        <se:Rule>
-          <se:Name>ORÇAMENTO</se:Name>
-          <se:Description>
-            <se:Title>ORÇAMENTO</se:Title>
-          </se:Description>
-          <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
-            <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>ETAPA</ogc:PropertyName>
-              <ogc:Literal>ORÇAMENTO</ogc:Literal>
-            </ogc:PropertyIsEqualTo>
-          </ogc:Filter>
-          <se:PointSymbolizer>
-            <se:Graphic>
-              <se:Mark>
-                <se:WellKnownName>circle</se:WellKnownName>
-                <se:Fill>
-                  <se:SvgParameter name="fill">#4def00</se:SvgParameter>
+                  <se:SvgParameter name="fill">#ff7f00</se:SvgParameter>
                 </se:Fill>
                 <se:Stroke>
                   <se:SvgParameter name="stroke">#232323</se:SvgParameter>
@@ -66,7 +39,7 @@
           </se:Description>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>ETAPA</ogc:PropertyName>
+              <ogc:PropertyName>STATUS</ogc:PropertyName>
               <ogc:Literal>PROJETO</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
@@ -75,7 +48,34 @@
               <se:Mark>
                 <se:WellKnownName>circle</se:WellKnownName>
                 <se:Fill>
-                  <se:SvgParameter name="fill">#ff7f00</se:SvgParameter>
+                  <se:SvgParameter name="fill">#ffff01</se:SvgParameter>
+                </se:Fill>
+                <se:Stroke>
+                  <se:SvgParameter name="stroke">#232323</se:SvgParameter>
+                  <se:SvgParameter name="stroke-width">0.5</se:SvgParameter>
+                </se:Stroke>
+              </se:Mark>
+              <se:Size>14</se:Size>
+            </se:Graphic>
+          </se:PointSymbolizer>
+        </se:Rule>
+        <se:Rule>
+          <se:Name>CONCLUIDO</se:Name>
+          <se:Description>
+            <se:Title>CONCLUIDO</se:Title>
+          </se:Description>
+          <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>STATUS</ogc:PropertyName>
+              <ogc:Literal>CONCLUIDO</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:Filter>
+          <se:PointSymbolizer>
+            <se:Graphic>
+              <se:Mark>
+                <se:WellKnownName>circle</se:WellKnownName>
+                <se:Fill>
+                  <se:SvgParameter name="fill">#339f31</se:SvgParameter>
                 </se:Fill>
                 <se:Stroke>
                   <se:SvgParameter name="stroke">#232323</se:SvgParameter>
