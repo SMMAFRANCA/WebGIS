@@ -1,18 +1,18 @@
 <!DOCTYPE qgis PUBLIC 'http://mrcc.com/qgis.dtd' 'SYSTEM'>
-<qgis minScale="100000000" maxScale="0" simplifyAlgorithm="0" simplifyMaxScale="1" simplifyLocal="1" autoRefreshMode="Disabled" hasScaleBasedVisibilityFlag="0" simplifyDrawingTol="1" symbologyReferenceScale="-1" labelsEnabled="0" readOnly="0" styleCategories="AllStyleCategories" version="3.44.15-Solothurn" simplifyDrawingHints="1" autoRefreshTime="0">
+<qgis autoRefreshMode="Disabled" labelsEnabled="0" simplifyAlgorithm="0" readOnly="0" symbologyReferenceScale="-1" version="3.44.15-Solothurn" minScale="100000000" simplifyDrawingTol="1" hasScaleBasedVisibilityFlag="0" styleCategories="AllStyleCategories" simplifyDrawingHints="1" simplifyMaxScale="1" autoRefreshTime="0" simplifyLocal="1" maxScale="0">
   <flags>
     <Identifiable>1</Identifiable>
     <Removable>1</Removable>
     <Searchable>1</Searchable>
     <Private>0</Private>
   </flags>
-  <temporal startField="" startExpression="" durationField="" limitMode="0" enabled="0" endExpression="" accumulate="0" endField="" durationUnit="min" fixedDuration="0" mode="0">
+  <temporal endField="" startExpression="" startField="" limitMode="0" accumulate="0" enabled="0" mode="0" fixedDuration="0" durationUnit="min" endExpression="" durationField="">
     <fixedRange>
       <start></start>
       <end></end>
     </fixedRange>
   </temporal>
-  <elevation clamping="Terrain" symbology="Line" respectLayerSymbol="1" zoffset="0" binding="Centroid" zscale="1" extrusion="0" showMarkerSymbolInSurfacePlots="0" extrusionEnabled="0" type="IndividualFeatures" customToleranceEnabled="0">
+  <elevation clamping="Terrain" extrusionEnabled="0" symbology="Line" showMarkerSymbolInSurfacePlots="0" zoffset="0" zscale="1" customToleranceEnabled="0" binding="Centroid" type="IndividualFeatures" extrusion="0" respectLayerSymbol="1">
     <data-defined-properties>
       <Option type="Map">
         <Option value="" type="QString" name="name"/>
@@ -21,7 +21,7 @@
       </Option>
     </data-defined-properties>
     <profileLineSymbol>
-      <symbol alpha="1" force_rhr="0" frame_rate="10" clip_to_extent="1" is_animated="0" type="line" name="">
+      <symbol is_animated="0" alpha="1" clip_to_extent="1" frame_rate="10" type="line" force_rhr="0" name="">
         <data_defined_properties>
           <Option type="Map">
             <Option value="" type="QString" name="name"/>
@@ -29,7 +29,7 @@
             <Option value="collection" type="QString" name="type"/>
           </Option>
         </data_defined_properties>
-        <layer locked="0" id="{25120f58-b294-4f9e-9bac-2adb6378bcb3}" enabled="1" pass="0" class="SimpleLine">
+        <layer pass="0" class="SimpleLine" enabled="1" locked="0" id="{25120f58-b294-4f9e-9bac-2adb6378bcb3}">
           <Option type="Map">
             <Option value="0" type="QString" name="align_dash_pattern"/>
             <Option value="square" type="QString" name="capstyle"/>
@@ -70,7 +70,7 @@
       </symbol>
     </profileLineSymbol>
     <profileFillSymbol>
-      <symbol alpha="1" force_rhr="0" frame_rate="10" clip_to_extent="1" is_animated="0" type="fill" name="">
+      <symbol is_animated="0" alpha="1" clip_to_extent="1" frame_rate="10" type="fill" force_rhr="0" name="">
         <data_defined_properties>
           <Option type="Map">
             <Option value="" type="QString" name="name"/>
@@ -78,7 +78,7 @@
             <Option value="collection" type="QString" name="type"/>
           </Option>
         </data_defined_properties>
-        <layer locked="0" id="{c439bb28-3953-4378-ba51-07cf4b0c1816}" enabled="1" pass="0" class="SimpleFill">
+        <layer pass="0" class="SimpleFill" enabled="1" locked="0" id="{c439bb28-3953-4378-ba51-07cf4b0c1816}">
           <Option type="Map">
             <Option value="3x:0,0,0,0,0,0" type="QString" name="border_width_map_unit_scale"/>
             <Option value="125,139,143,255,rgb:0.4901961,0.545098,0.5607843,1" type="QString" name="color"/>
@@ -103,7 +103,7 @@
       </symbol>
     </profileFillSymbol>
     <profileMarkerSymbol>
-      <symbol alpha="1" force_rhr="0" frame_rate="10" clip_to_extent="1" is_animated="0" type="marker" name="">
+      <symbol is_animated="0" alpha="1" clip_to_extent="1" frame_rate="10" type="marker" force_rhr="0" name="">
         <data_defined_properties>
           <Option type="Map">
             <Option value="" type="QString" name="name"/>
@@ -111,7 +111,7 @@
             <Option value="collection" type="QString" name="type"/>
           </Option>
         </data_defined_properties>
-        <layer locked="0" id="{8aceed38-bf57-4944-82dc-a8f29429f4a9}" enabled="1" pass="0" class="SimpleMarker">
+        <layer pass="0" class="SimpleMarker" enabled="1" locked="0" id="{8aceed38-bf57-4944-82dc-a8f29429f4a9}">
           <Option type="Map">
             <Option value="0" type="QString" name="angle"/>
             <Option value="square" type="QString" name="cap_style"/>
@@ -144,9 +144,9 @@
       </symbol>
     </profileMarkerSymbol>
   </elevation>
-  <renderer-v2 enableorderby="0" forceraster="0" type="singleSymbol" symbollevels="0" referencescale="-1">
+  <renderer-v2 forceraster="0" enableorderby="0" symbollevels="0" type="singleSymbol" referencescale="-1">
     <symbols>
-      <symbol alpha="1" force_rhr="0" frame_rate="10" clip_to_extent="1" is_animated="0" type="marker" name="0">
+      <symbol is_animated="0" alpha="1" clip_to_extent="1" frame_rate="10" type="marker" force_rhr="0" name="0">
         <data_defined_properties>
           <Option type="Map">
             <Option value="" type="QString" name="name"/>
@@ -154,7 +154,7 @@
             <Option value="collection" type="QString" name="type"/>
           </Option>
         </data_defined_properties>
-        <layer locked="0" id="{ed22568a-64fe-4bce-960c-9ee6ca64d5b2}" enabled="1" pass="0" class="SimpleMarker">
+        <layer pass="0" class="SimpleMarker" enabled="1" locked="0" id="{ed22568a-64fe-4bce-960c-9ee6ca64d5b2}">
           <Option type="Map">
             <Option value="0" type="QString" name="angle"/>
             <Option value="square" type="QString" name="cap_style"/>
@@ -201,6 +201,9 @@
   </selection>
   <customproperties>
     <Option type="Map">
+      <Option type="List" name="dualview/previewExpressions">
+        <Option value="COALESCE( &quot;DESCRICAO&quot;, '&lt;NULL>' )" type="QString"/>
+      </Option>
       <Option value="true" type="bool" name="qgis2web/Interactive"/>
       <Option value="false" type="bool" name="qgis2web/Visible"/>
       <Option value="inline label - visible with data" type="QString" name="qgis2web/popup/AREA_M2"/>
@@ -316,18 +319,18 @@
     </field>
   </fieldConfiguration>
   <aliases>
-    <alias index="0" name="" field="fid"/>
-    <alias index="1" name="" field="COMPROMISSO"/>
-    <alias index="2" name="" field="AREA_M2"/>
-    <alias index="3" name="" field="QUANTIDADE"/>
-    <alias index="4" name="" field="PROCESSO_MUNICIPAL"/>
-    <alias index="5" name="" field="DOCUMENTO"/>
-    <alias index="6" name="" field="IC"/>
-    <alias index="7" name="" field="PROCESSO_CETESB"/>
-    <alias index="8" name="" field="SITUACAO"/>
-    <alias index="9" name="" field="AUTORIZACAO"/>
-    <alias index="10" name="" field="MATRICULA"/>
-    <alias index="11" name="" field="DESCRICAO"/>
+    <alias index="0" field="fid" name=""/>
+    <alias index="1" field="COMPROMISSO" name=""/>
+    <alias index="2" field="AREA_M2" name=""/>
+    <alias index="3" field="QUANTIDADE" name=""/>
+    <alias index="4" field="PROCESSO_MUNICIPAL" name=""/>
+    <alias index="5" field="DOCUMENTO" name=""/>
+    <alias index="6" field="IC" name=""/>
+    <alias index="7" field="PROCESSO_CETESB" name=""/>
+    <alias index="8" field="SITUACAO" name=""/>
+    <alias index="9" field="AUTORIZACAO" name=""/>
+    <alias index="10" field="MATRICULA" name=""/>
+    <alias index="11" field="DESCRICAO" name=""/>
   </aliases>
   <defaults>
     <default applyOnUpdate="0" expression="" field="fid"/>
@@ -344,18 +347,18 @@
     <default applyOnUpdate="0" expression="" field="DESCRICAO"/>
   </defaults>
   <constraints>
-    <constraint notnull_strength="1" exp_strength="0" unique_strength="1" field="fid" constraints="3"/>
-    <constraint notnull_strength="0" exp_strength="0" unique_strength="0" field="COMPROMISSO" constraints="0"/>
-    <constraint notnull_strength="0" exp_strength="0" unique_strength="0" field="AREA_M2" constraints="0"/>
-    <constraint notnull_strength="0" exp_strength="0" unique_strength="0" field="QUANTIDADE" constraints="0"/>
-    <constraint notnull_strength="0" exp_strength="0" unique_strength="0" field="PROCESSO_MUNICIPAL" constraints="0"/>
-    <constraint notnull_strength="0" exp_strength="0" unique_strength="0" field="DOCUMENTO" constraints="0"/>
-    <constraint notnull_strength="0" exp_strength="0" unique_strength="0" field="IC" constraints="0"/>
-    <constraint notnull_strength="0" exp_strength="0" unique_strength="0" field="PROCESSO_CETESB" constraints="0"/>
-    <constraint notnull_strength="0" exp_strength="0" unique_strength="0" field="SITUACAO" constraints="0"/>
-    <constraint notnull_strength="0" exp_strength="0" unique_strength="0" field="AUTORIZACAO" constraints="0"/>
-    <constraint notnull_strength="0" exp_strength="0" unique_strength="0" field="MATRICULA" constraints="0"/>
-    <constraint notnull_strength="0" exp_strength="0" unique_strength="0" field="DESCRICAO" constraints="0"/>
+    <constraint unique_strength="1" exp_strength="0" constraints="3" notnull_strength="1" field="fid"/>
+    <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="COMPROMISSO"/>
+    <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="AREA_M2"/>
+    <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="QUANTIDADE"/>
+    <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="PROCESSO_MUNICIPAL"/>
+    <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="DOCUMENTO"/>
+    <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="IC"/>
+    <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="PROCESSO_CETESB"/>
+    <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="SITUACAO"/>
+    <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="AUTORIZACAO"/>
+    <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="MATRICULA"/>
+    <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="DESCRICAO"/>
   </constraints>
   <constraintExpressions>
     <constraint desc="" exp="" field="fid"/>
@@ -373,10 +376,24 @@
   </constraintExpressions>
   <expressionfields/>
   <attributeactions>
-    <defaultAction key="Canvas" value="{00000000-0000-0000-0000-000000000000}"/>
+    <defaultAction value="{00000000-0000-0000-0000-000000000000}" key="Canvas"/>
   </attributeactions>
-  <attributetableconfig actionWidgetStyle="dropDown" sortOrder="0" sortExpression="">
-    <columns/>
+  <attributetableconfig sortExpression="" sortOrder="0" actionWidgetStyle="dropDown">
+    <columns>
+      <column hidden="0" width="-1" type="field" name="fid"/>
+      <column hidden="0" width="167" type="field" name="COMPROMISSO"/>
+      <column hidden="0" width="-1" type="field" name="AREA_M2"/>
+      <column hidden="0" width="-1" type="field" name="QUANTIDADE"/>
+      <column hidden="0" width="-1" type="field" name="PROCESSO_MUNICIPAL"/>
+      <column hidden="0" width="-1" type="field" name="DOCUMENTO"/>
+      <column hidden="0" width="-1" type="field" name="IC"/>
+      <column hidden="0" width="-1" type="field" name="PROCESSO_CETESB"/>
+      <column hidden="0" width="-1" type="field" name="SITUACAO"/>
+      <column hidden="0" width="-1" type="field" name="AUTORIZACAO"/>
+      <column hidden="0" width="-1" type="field" name="MATRICULA"/>
+      <column hidden="0" width="440" type="field" name="DESCRICAO"/>
+      <column hidden="1" width="-1" type="actions"/>
+    </columns>
   </attributetableconfig>
   <conditionalstyles>
     <rowstyles/>
@@ -395,7 +412,7 @@
   <reuseLastValue/>
   <dataDefinedFieldProperties/>
   <widgets/>
-  <previewExpression></previewExpression>
+  <previewExpression>COALESCE( "DESCRICAO", '&lt;NULL>' )</previewExpression>
   <mapTip enabled="1"></mapTip>
   <layerGeometryType>0</layerGeometryType>
 </qgis>
